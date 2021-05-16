@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px 100px 100px; 
+    row-gap: 10px;
+    column-gap: 10px; 
+}
+
+div {
+    display: flex; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;     
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.A {
+    background-color: yellowgreen;
+    grid-column: 1/4; 
+}
+
+.B {
+    background-color: teal;
+    grid-column: 1/4;
+}
+
+.C {
+    background-color: thistle;
+}
+
+.D {
+    background-color: brown; 
+}
+
+.E {
+    background-color: orange; 
+}
+
+.F {
+    background-color: tomato;
+    grid-column: 1/4;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-gap: 10px; 
+        height: 100vh; 
+        grid-template-areas: 
+        "a a a a"
+        "b b b f"
+        "c d e f"
+    }
+
+.A {
+    grid-area: a; 
+}
+.B {
+    grid-area: b; 
+}
+.C {
+    grid-area: c;
+}
+.D {
+    grid-area: d; 
+}
+.E {
+    grid-area: e;
+}
+.F {
+    grid-area: f; 
+}
+}
