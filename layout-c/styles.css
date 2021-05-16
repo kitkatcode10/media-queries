@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 400px; 
+    grid-gap: 20px;
+    height: 100vh; 
+}
+
+div {
+    display: flex; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.A {
+    background-color: aquamarine;
+    grid-column: 1/4; 
+}
+
+.B {
+    background-color: bisque;
+        
+}
+
+.C {
+    background-color: blueviolet;
+}
+
+.D {
+    background-color: coral;
+}
+
+.E {
+    background-color: pink; 
+}
+.F {
+    background-color: darkgreen;
+}
+
+.G {
+    background-color: orange; 
+}
+
+.H {
+    background-color: orchid; 
+    grid-column: 1/4; 
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 100vh; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-gap: 20px; 
+        grid-template-areas: 
+        "a a a a"
+        "b c d h"
+        "e f g h"; 
+    }
+    
+.A {
+    grid-area: a; 
+}
+
+.B { 
+    grid-area: b; 
+}
+
+.C {
+    grid-area: c; 
+}
+
+.D {
+    grid-area: d; 
+}
+
+.E {
+    grid-area: e;
+}
+
+.F {
+    grid-area: f; 
+}
+
+.G {
+    grid-area: g; 
+}
+
+.H {
+    grid-area: h; 
+}
+
+}
